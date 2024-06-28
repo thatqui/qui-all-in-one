@@ -7,8 +7,8 @@ services:
     networks:
       - allinone
     ports:
-      - "80:80"
-      - "443:443"
+      - 80:80
+      - 443:443
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - ./caddy/caddy_site:/srv
@@ -20,8 +20,6 @@ services:
     restart: unless-stopped
     networks:
       - allinone
-    ports:
-      - "8080:80"
     image: vaultwarden/server:latest
     volumes:
       - ./vaultwarden/data:/data
@@ -37,8 +35,6 @@ services:
       PGID: 1000
     volumes:
       - "./flatnotes/data:/data"
-    ports:
-      - "7777:8080"
     restart: unless-stopped
 
 volumes:
