@@ -1,0 +1,12 @@
+## MY CADDY CONFIG ##
+{
+	http_port 80
+}
+
+vaultwarden.{$DOMAIN} {
+	reverse_proxy localhost:8080
+}
+
+note.{$DOMAIN} {
+	reverse_proxy localhost:7777
+}
