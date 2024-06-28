@@ -1,6 +1,6 @@
 - [Qui All In One](#qui-all-in-one)
     - [Installation](#installation)
-        - [Deb12Setup.sh](#deb12setup.sh)
+        - [Deb12Setup Script](#deb12setup-script)
         - [Creating DNS Records](#creating-dns-records)
             - [A Record](#a-record)
             - [CNAME Records](#cname-records)
@@ -14,7 +14,7 @@ A compose file has all the services I use.
 
 ## Installation
 
-### Deb12Setup.sh
+### Deb12Setup Script
 
 - If you machine doesn't have anything, you can use [Deb12Setup.sh](https://gist.github.com/thatqui/92f187bd87816cf6db0bd57db7f5a577). In reverse proxy question, don't select anything.
 
