@@ -3,8 +3,9 @@ services:
   caddy:
     image: caddy:latest
     restart: unless-stopped
-    network_mode: host
     env_file: .env
+    networks:
+      - allinone
     ports:
       - "80:80"
       - "443:443"
@@ -17,8 +18,10 @@ services:
   vaultwarden:
     container_name: vaultwarden
     restart: unless-stopped
+    networks:
+      - allinone
     ports:
-      - "127.0.0.1:8080:80"
+      - "8080:80"
     image: vaultwarden/server:latest
     volumes:
       - ./vaultwarden/data:/data
@@ -27,16 +30,23 @@ services:
     container_name: flatnotes
     image: dullage/flatnotes:latest
     env_file: .env
+    networks:
+      - allinone
     environment:
       PUID: 1000
       PGID: 1000
     volumes:
       - "./flatnotes/data:/data"
     ports:
-      - "127.0.0.1:7777:8080"
+      - "7777:8080"
     restart: unless-stopped
 
 volumes:
   caddy_data:
     external: true
   caddy_config:
+
+networks:
+  allinone:
+    name: allinone
+    external: true
