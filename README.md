@@ -24,8 +24,8 @@ A compose file has all the services I use.
 - A @ <your ip>
 
 ### CNAME Records
-- CNAME note <yourmaindomain>
-- CNAME vaultwarden <yourmaindomain>
+- CNAME fn <yourmaindomain>
+- CNAME bw <yourmaindomain>
 
 ### Cloning Repo
 

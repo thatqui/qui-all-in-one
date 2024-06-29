@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  flatnotes:
+    container_name: flatnotes
+    image: dullage/flatnotes:latest
+    env_file: ../.env
+    networks:
+      - allinone
+    environment:
+      PUID: 1000
+      PGID: 1000
+    volumes:
+      - "./data:/data"
+    restart: unless-stopped

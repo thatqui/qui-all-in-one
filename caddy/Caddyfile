@@ -3,10 +3,10 @@
 	http_port 80
 }
 
-vaultwarden.{$DOMAIN} {
+bw.{$DOMAIN} {
 	reverse_proxy vaultwarden:80
 }
 
-note.{$DOMAIN} {
+fn.{$DOMAIN} {
 	reverse_proxy flatnotes:8080
 }

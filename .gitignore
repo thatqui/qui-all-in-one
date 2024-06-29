@@ -1,6 +1,1 @@
-caddy
-vaultwarden
-flatnotes
-
-### IGNORE ENVIRONMENT FILE ###
 .env
