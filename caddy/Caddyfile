@@ -3,6 +3,10 @@
 	http_port 80
 }
 
+{$DOMAIN} {
+	redir https://blog.quitaxd.online
+}
+
 bw.{$DOMAIN} {
 	reverse_proxy vaultwarden:80
 }
@@ -13,4 +17,8 @@ fn.{$DOMAIN} {
 
 lr.{$DOMAIN} {
 	reverse_proxy redlib:8080
+}
+
+fr.{$DOMAIN} {
+	reverse_proxy freshrss:80
 }

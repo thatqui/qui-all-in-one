@@ -11,6 +11,6 @@ services:
       - 443:443
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
-      - ./data/site:/srv
+      - ./site:/srv
       - ./data/data:/data
       - ./data/config:/config

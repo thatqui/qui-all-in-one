@@ -27,6 +27,7 @@ A compose file has all the services I use.
 - CNAME fn <yourmaindomain>
 - CNAME bw <yourmaindomain>
 - CNAME lr <yourmaindomain>
+- CNAME fr <yourmaindomain>
 
 ### Cloning Repo
 
@@ -46,3 +47,14 @@ cd qui-all-in-one
 ### Starting Containers
 
 - Just run `docker compose up -d`
+
+## Post-Install
+
+- By default, your main domain is redirecting to https://blog.quitaxd.online. If you don't want, you can configure [Caddyfile](./caddy/Caddyfile).
+
+## Sites
+
+- Flatnotes: A note app --> fn.example.com
+- Vaultwarden: A password manager uses bitwarden api --> bw.example.com
+- Redlib: Reddit Front-end --> lr.example.com
+- FreshRSS: RSS Reader --> fr.example.com

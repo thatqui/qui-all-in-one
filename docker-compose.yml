@@ -4,6 +4,7 @@ include:
     - vaultwarden/compose.yml
     - flatnotes/compose.yml
     - redlib/compose.yml
+    - freshrss/compose.yml
 
 networks:
   allinone:
