@@ -3,6 +3,7 @@ include:
     - caddy/compose.yml
     - vaultwarden/compose.yml
     - flatnotes/compose.yml
+    - redlib/compose.yml
 
 networks:
   allinone:

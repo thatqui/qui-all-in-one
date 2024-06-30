@@ -26,6 +26,7 @@ A compose file has all the services I use.
 ### CNAME Records
 - CNAME fn <yourmaindomain>
 - CNAME bw <yourmaindomain>
+- CNAME lr <yourmaindomain>
 
 ### Cloning Repo
 

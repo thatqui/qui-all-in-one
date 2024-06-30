@@ -10,3 +10,7 @@ bw.{$DOMAIN} {
 fn.{$DOMAIN} {
 	reverse_proxy flatnotes:8080
 }
+
+lr.{$DOMAIN} {
+	reverse_proxy redlib:8080
+}
