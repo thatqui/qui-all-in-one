@@ -5,6 +5,8 @@ include:
     - flatnotes/compose.yml
     - redlib/compose.yml
     - freshrss/compose.yml
+    - forgejo/compose.yml
+    - whoogle/compose.yml
 
 networks:
   allinone:

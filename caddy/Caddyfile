@@ -22,3 +22,11 @@ lr.{$DOMAIN} {
 fr.{$DOMAIN} {
 	reverse_proxy freshrss:80
 }
+
+git.{$DOMAIN} {
+	reverse_proxy forgejo:3000
+}
+
+search.{$DOMAIN} {
+	reverse_proxy whoogle-search:5000
+}
